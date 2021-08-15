@@ -7,19 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <li>li-1</li>
-    <li>li-2</li>
-    <ol>
-        <li>ol-li-1</li>
-        <li>ol-li-2</li>
-        <ul>ol-ul-1</ul>
-        <ul><li>ol-ul-li-1</li></ul>
-    </ol>
-    <ul>
-        <li>ul-li-1</li>
-        <li>ul-li-2</li>
-        <ol>ul-ol-1</ol>
-        <ol><li>ul-ol-li-1</li></ol>
-    </ul>
+    <input id="a" onchange="input()">
+    <p id="b"></p>
+    <script>
+        function input()
+        {
+            var a = document.getElementById("a").value
+            document.getElementById("b").innerText = a
+        }
+    </script>
 </body>
 </html>
